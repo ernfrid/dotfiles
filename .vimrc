@@ -1,5 +1,34 @@
 "Allow more vim goodies
 set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" Other Vundle Plugins should go below
+Plugin 'tpope/vim-surround'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+" Enable ft- and indent plugins (Requires at least V6)
+" Required by Vundle     
+filetype plugin indent on
+
+"
+" Brief help for Vundle
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+ 
 "Show the mode at the bottom
 set showmode
 "Set the width of the screen to 78 so code prints nicely
@@ -37,9 +66,6 @@ set background=dark
 "colorscheme dante
 colorscheme solarized
 
-"      Enable ft- and indent plugins (Requires at least V6)
-filetype plugin on
-filetype indent on
 
 "Allow incremental search
 set incsearch
