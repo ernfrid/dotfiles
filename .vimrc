@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Other Vundle Plugins should go below
 Plugin 'tpope/vim-surround'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -30,7 +31,8 @@ filetype plugin indent on
 " Put your non-Plugin stuff after this line
  
 "Show the mode at the bottom
-set showmode
+" Not needed with airline
+"set showmode
 "Set the width of the screen to 78 so code prints nicely
 "set textwidth=78
 
@@ -65,6 +67,9 @@ set background=dark
 "use less jarring colorscheme
 "colorscheme dante
 colorscheme solarized
+" use prettier font for airline
+let g:airline_powerline_fonts=1
+set laststatus=2
 
 
 "Allow incremental search
