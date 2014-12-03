@@ -11,13 +11,14 @@ Plugin 'gmarik/Vundle.vim'
 
 " Other Vundle Plugins should go below
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
 " Enable ft- and indent plugins (Requires at least V6)
-" Required by Vundle     
+" Required by Vundle
 filetype plugin indent on
 
 "
@@ -29,7 +30,7 @@ filetype plugin indent on
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
- 
+
 "Show the mode at the bottom
 " Not needed with airline
 "set showmode
@@ -59,7 +60,7 @@ set number
 set showmatch
 
 "Turn on syntax highlighting
-syntax enable 
+syntax enable
 
 "Set background colors to show up better on dark background
 set background=dark
