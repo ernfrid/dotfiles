@@ -37,8 +37,6 @@ filetype plugin indent on
 "Set the width of the screen to 78 so code prints nicely
 "set textwidth=78
 
-" 256 colors
-set t_Co=256
 
 "Set up tabs to be 4 spaces
 set expandtab
@@ -65,16 +63,20 @@ set showmatch
 "Turn on syntax highlighting
 syntax enable
 
+" 256 colors
+set t_Co=256
+
 "Set background colors to show up better on dark background
 set background=dark
 
 "use less jarring colorscheme
 "colorscheme dante
 colorscheme solarized
+
+" Airline
 " use prettier font for airline
 let g:airline_powerline_fonts=1
 set laststatus=2
-
 
 "Allow incremental search
 set incsearch
