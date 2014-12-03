@@ -37,6 +37,9 @@ filetype plugin indent on
 "Set the width of the screen to 78 so code prints nicely
 "set textwidth=78
 
+" 256 colors
+set t_Co=256
+
 "Set up tabs to be 4 spaces
 set expandtab
 set tabstop=4
