@@ -1,4 +1,5 @@
-"Allow more vim goodies
+" ----Vundle----
+" Allow more vim goodies
 set nocompatible
 filetype off
 
@@ -31,58 +32,46 @@ filetype plugin indent on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-"Show the mode at the bottom
-" Not needed with airline
-"set showmode
-"Set the width of the screen to 78 so code prints nicely
-"set textwidth=78
-
-
-"Set up tabs to be 4 spaces
+" ----Indenting-----
+" Set up tabs to be 4 spaces
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set smarttab
-
-"Set it to autoindent
+" Set it to autoindent
 set autoindent
 
-"Force a write on certain commands
-set autowrite
+" ----Usability----
 
-"Show the cursor position
+" Show the cursor position
 set ruler
-
-"Turn on Line numbers
+" Turn on Line numbers
 set number
-
-"Highlight brackets when typed
+" Highlight brackets when typed
 set showmatch
-
-"Turn on syntax highlighting
 syntax enable
+
+" ----Display----
 
 " 256 colors
 set t_Co=256
-
-"Set background colors to show up better on dark background
+" Set background colors to show up better on dark background
 set background=dark
 
-"use less jarring colorscheme
-"colorscheme dante
+" use less jarring colorscheme
 colorscheme solarized
 
-" Airline
+" ----Airline----
 " use prettier font for airline
 let g:airline_powerline_fonts=1
 set laststatus=2
 
-"Allow incremental search
+" ----Miscellaneous----
+"
+" Force a write on certain commands
+set autowrite
+" Allow incremental search
 set incsearch
-
-"Set up abbreviations as shortcuts
-abbr #---  #----------------------------------
-
-"Funky menu for traversing the fs
+" Funky menu for traversing the fs
 set wildmenu
